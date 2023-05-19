@@ -3,6 +3,7 @@ const generateMarkdown = require("./utils/generateMarkdown")
 const inquirer = require("inquirer")
 const fs = require("fs")
 // TODO: Create an array of questions for user input
+// add the rest of the ## in the readme
 const questions = [
     {
         type: "input",
@@ -13,6 +14,11 @@ const questions = [
         type: "input",
         name: "description",
         message: "Please describe your application"
+    },
+    {
+        type: "input",
+        name: "usage",
+        message: "What is the primary objective for using this application?"
     },
 ];
 
